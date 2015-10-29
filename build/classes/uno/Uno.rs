@@ -1,2 +1,0 @@
-uno.Uno
-uno.sound
