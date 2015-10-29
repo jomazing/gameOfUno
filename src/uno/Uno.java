@@ -24,7 +24,6 @@ public class Uno extends JFrame implements Runnable {
     sound zsound = null;
     sound bgSound = null;
 
-//variables for rocket.
     
 
     static Uno frame;
@@ -41,7 +40,6 @@ public class Uno extends JFrame implements Runnable {
                 if (e.BUTTON1 == e.getButton()) {
                     //left button
 
-// location of the cursor.
                     int xpos = e.getX();
                     int ypos = e.getY();
 
@@ -137,7 +135,6 @@ public class Uno extends JFrame implements Runnable {
         gOld.drawImage(image, 0, 0, null);
     }
 ////////////////////////////////////////////////////////////////////////////
-////////////////////////////////////////////////////////////////////////////
 // needed for     implement runnable
     public void run() {
         while (true) {
@@ -153,10 +150,7 @@ public class Uno extends JFrame implements Runnable {
     }
 /////////////////////////////////////////////////////////////////////////
     public void reset() {
-
-//init the location of the rocket to the center.
         
-
     }
 /////////////////////////////////////////////////////////////////////////
     public void animate() {
@@ -197,7 +191,6 @@ public class Uno extends JFrame implements Runnable {
     public int getYNormal(int y) {
         return (-y + YBORDER + YTITLE + getHeight2());
     }
-    
     
     public int getWidth2() {
         return (xsize - getX(0) - XBORDER);
